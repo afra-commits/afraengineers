@@ -775,3 +775,11 @@ $(document).ready(function () {
   odometerCounter();
 });
 
+// whatsapp message code
+
+
+document.getElementById("enquiryBtn").onclick = function() {
+    const phone = "918848671403"; // Your WhatsApp Number
+    const message = encodeURIComponent("Hi Afra Engineers, I am interested in a Solar Energy solution. Please provide more details.");
+    window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+};
