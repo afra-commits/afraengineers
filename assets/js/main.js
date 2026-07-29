@@ -783,3 +783,28 @@ document.getElementById("enquiryBtn").onclick = function() {
     const message = encodeURIComponent("Hi Afra Engineers, I am interested in a Solar Energy solution. Please provide more details.");
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
 };
+
+function sendToWhatsapp() {
+
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    // Replace with your WhatsApp number (country code + number, no +)
+    var whatsapp = "918848671403";
+
+    var text =
+`*New Website Enquiry*
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+📧 Email: ${email}
+
+📝 Message:
+${message}`;
+
+    var url = "https://wa.me/" + whatsapp + "?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+}
