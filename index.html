@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
@@ -28,262 +27,258 @@
   <link rel="stylesheet" href="assets/css/plugins/swiper-slider.css">
   <link rel="stylesheet" href="assets/css/plugins/odometer.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body class="body1" style="overflow-x: hidden !important;">
 
-<!-- ADD THIS TO YOUR HTML BODY -->
-
-<!-- Floating Icons Container -->
-<div class="floating-icons">
+  <!-- Floating Icons Container -->
+  <div class="floating-icons">
     <!-- WhatsApp Button -->
     <div style="display: flex; align-items: center; gap: 12px;">
-        <!-- <span class="floating-label" id="whatsapp-label">Chat on WhatsApp</span> -->
-        <a href="https://wa.me/884 867 1403" target="_blank" class="floating-btn whatsapp" title="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+      <!-- <span class="floating-label" id="whatsapp-label">Chat on WhatsApp</span> -->
+      <a href="https://wa.me/884 867 1403" target="_blank" class="floating-btn whatsapp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
 
     <!-- Call Button -->
     <div style="display: flex; align-items: center; gap: 12px;">
-        <!-- <span class="floating-label" id="call-label">Give us a call</span> -->
-        <a href="tel:+884 867 1403" class="floating-btn call" title="Call us">
-            <i class="fas fa-phone-alt"></i>
-        </a>
+      <!-- <span class="floating-label" id="call-label">Give us a call</span> -->
+      <a href="tel:+884 867 1403" class="floating-btn call" title="Call us">
+        <i class="fas fa-phone-alt"></i>
+      </a>
     </div>
+  </div>
 
-    <!-- Toggle Button -->
-    <!-- <button class="floating-btn toggle" id="toggle-btn" title="Show/Hide options">
-        <i class="fas fa-plus"></i>
-    </button> -->
-</div>
-
-<!-- ADD FONT AWESOME TO HEAD (if not already included) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- ===== CSS ===== -->
-<style>
+  <!-- ===== CSS ===== -->
+  <style>
     /* Floating Icons Container */
     .floating-icons {
-        position: fixed;
-        bottom: 70px;
-        right: 40px;
-        z-index: 999;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-end;
+      position: fixed;
+      bottom: 70px;
+      right: 40px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-end;
     }
 
     /* Individual Icon Button */
     .floating-btn {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        font-size: 28px;
-        font-weight: bold;
-        text-decoration: none;
-        border: none;
-        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        border: 1px solid rgba(255, 255, 255, 0.18);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
     /* WhatsApp Button */
     .floating-btn.whatsapp {
-        background: rgba(37, 211, 102, 0.15);
-        color: #25d366;
+      background: rgba(37, 211, 102, 0.15);
+      color: #25d366;
     }
 
     .floating-btn.whatsapp::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-        transition: left 0.5s;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s;
     }
 
     .floating-btn.whatsapp:hover {
-        background: rgba(37, 211, 102, 0.25);
-        transform: scale(1.15) translateY(-10px);
-        box-shadow: 0 15px 40px 0 rgba(37, 211, 102, 0.4);
+      background: rgba(37, 211, 102, 0.25);
+      transform: scale(1.15) translateY(-10px);
+      box-shadow: 0 15px 40px 0 rgba(37, 211, 102, 0.4);
     }
 
     .floating-btn.whatsapp:hover::before {
-        left: 100%;
+      left: 100%;
     }
 
     /* Call Button */
     .floating-btn.call {
-        background: rgba(59, 89, 152, 0.15);
-        color: #3b5998;
+      background: rgba(59, 89, 152, 0.15);
+      color: #3b5998;
     }
 
     .floating-btn.call::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-        transition: left 0.5s;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s;
     }
 
     .floating-btn.call:hover {
-        background: rgba(59, 89, 152, 0.25);
-        transform: scale(1.15) translateY(-10px);
-        box-shadow: 0 15px 40px 0 rgba(59, 89, 152, 0.4);
+      background: rgba(59, 89, 152, 0.25);
+      transform: scale(1.15) translateY(-10px);
+      box-shadow: 0 15px 40px 0 rgba(59, 89, 152, 0.4);
     }
 
     .floating-btn.call:hover::before {
-        left: 100%;
+      left: 100%;
     }
 
     /* Toggle Button (Main) */
     .floating-btn.toggle {
-        background: rgba(255, 255, 255, 0.2);
-        color: white;
-        width: 70px;
-        height: 70px;
-        font-size: 32px;
-        animation: pulse 2s infinite;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      width: 70px;
+      height: 70px;
+      font-size: 32px;
+      animation: pulse 2s infinite;
     }
 
     .floating-btn.toggle:hover {
-        background: rgba(255, 255, 255, 0.3);
-        transform: scale(1.12) rotate(90deg);
-        box-shadow: 0 15px 40px 0 rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.12) rotate(90deg);
+      box-shadow: 0 15px 40px 0 rgba(255, 255, 255, 0.4);
     }
 
     /* Labels */
     .floating-label {
-        background: rgba(255, 255, 255, 0.15);
-        color: white;
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-size: 0.85rem;
-        font-weight: 500;
-        white-space: nowrap;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        opacity: 0;
-        margin-right: 15px;
-        transition: opacity 0.3s ease;
-        transform: translateX(10px);
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      white-space: nowrap;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      opacity: 0;
+      margin-right: 15px;
+      transition: opacity 0.3s ease;
+      transform: translateX(10px);
     }
 
     .floating-label.show {
-        opacity: 1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
 
     /* Floating Animation */
     @keyframes float {
-        0%, 100% {
-            transform: translateY(0px);
-        }
-        50% {
-            transform: translateY(-12px);
-        }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-12px);
+      }
     }
 
     .floating-icons.active .floating-btn:not(.toggle) {
-        animation: float 3s ease-in-out infinite;
+      animation: float 3s ease-in-out infinite;
     }
 
     .floating-icons.active .floating-btn:nth-child(1) {
-        animation-delay: 0.2s;
+      animation-delay: 0.2s;
     }
 
     .floating-icons.active .floating-btn:nth-child(2) {
-        animation-delay: 0.4s;
+      animation-delay: 0.4s;
     }
 
     /* Pulse Animation for Toggle Button */
     @keyframes pulse {
-        0% {
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-        }
-        70% {
-            box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
-        }
-        100% {
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-        }
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      }
     }
 
     /* Responsive */
     @media (max-width: 768px) {
-        .floating-icons {
-            bottom: 70px;
-            right: 20px;
-            gap: 12px;
-        }
+      .floating-icons {
+        bottom: 70px;
+        right: 20px;
+        gap: 12px;
+      }
 
-        .floating-btn {
-            width: 55px;
-            height: 55px;
-            font-size: 24px;
-        }
+      .floating-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+      }
 
-        .floating-btn.toggle {
-            width: 65px;
-            height: 65px;
-            font-size: 28px;
-        }
+      .floating-btn.toggle {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+      }
 
-        .floating-label {
-            display: none;
-        }
+      .floating-label {
+        display: none;
+      }
     }
-</style>
+  </style>
 
-<!-- ===== JAVASCRIPT ===== -->
-<script>
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
     const toggleBtn = document.getElementById('toggle-btn');
     const floatingIcons = document.querySelector('.floating-icons');
     const labels = document.querySelectorAll('.floating-label');
 
     // Toggle functionality
     toggleBtn.addEventListener('click', () => {
-        floatingIcons.classList.toggle('active');
-        toggleBtn.querySelector('i').classList.toggle('fa-plus');
-        toggleBtn.querySelector('i').classList.toggle('fa-times');
-        
-        labels.forEach(label => {
-            label.classList.toggle('show');
-        });
+      floatingIcons.classList.toggle('active');
+      toggleBtn.querySelector('i').classList.toggle('fa-plus');
+      toggleBtn.querySelector('i').classList.toggle('fa-times');
+
+      labels.forEach(label => {
+        label.classList.toggle('show');
+      });
     });
 
     // Close when clicking outside
     document.addEventListener('click', (e) => {
-        if (!floatingIcons.contains(e.target)) {
-            floatingIcons.classList.remove('active');
-            toggleBtn.querySelector('i').classList.remove('fa-plus');
-            toggleBtn.querySelector('i').classList.add('fa-times');
-            labels.forEach(label => {
-                label.classList.remove('show');
-            });
-        }
+      if (!floatingIcons.contains(e.target)) {
+        floatingIcons.classList.remove('active');
+        toggleBtn.querySelector('i').classList.remove('fa-plus');
+        toggleBtn.querySelector('i').classList.add('fa-times');
+        labels.forEach(label => {
+          label.classList.remove('show');
+        });
+      }
     });
-</script>
+  </script>
 
 
 
-  
+
   <!--===== PRELOADER STARTS =======-->
   <div class="preloader">
     <div class="loading-container">
@@ -326,8 +321,7 @@
                   </li>
                   <li><a href="our-service.html">Services<span><i class="fa-solid d-lg-inline d-none"></i></span></a>
                   </li>
-                  <li><a href="projects.html">Projects<span><i
-                          class="fa-solid d-lg-inline d-none"></i></span></a>
+                  <li><a href="projects.html">Projects<span><i class="fa-solid d-lg-inline d-none"></i></span></a>
                   </li>
                   <li><a href="contact.html">Contact<span><i class="fa-solid d-lg-inline d-none"></i></span></a>
                   </li>
@@ -384,10 +378,9 @@
         <div class="vl-offcanvas-social">
           <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
           <div class="space20"></div>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1EUB5ST9ZU/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/afra-engineers/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/afra_engineers?igsh=bXU1ZWlwMWoyMHNr"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -397,7 +390,7 @@
   <!--===== HERO AREA STARTS =======-->
   <div class="hero4-slider-sectionarea">
     <div class="hero4-slider-area"
-      style="background-image: url(assets/img/all-images/bg/banner1.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      style="background-image: url(assets/img/all-images/bg/banner1.webp); background-position: center; background-repeat: no-repeat; background-size: cover;">
       <img src="assets/img/all-images/bg/h-bg1.png"
         alt="customized solar panel solutions for home and business energy needs" class="h-bg1">
       <img src="assets/img/elements/elements5.png"
@@ -417,7 +410,7 @@
               <div class="">
                 <form>
                   <!-- <input type="text" placeholder=""> -->
-                  <button type="submit" class="vl-btn1"><a style="color: aliceblue;" href="tel:+91884 867 1403">Contact
+                  <button type="submit" class="vl-btn1"><a style="color: aliceblue;" href="contact.html">Contact
                       Now</a><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i
                         class="fa-solid fa-arrow-right"></i></span></button>
                 </form>
@@ -428,7 +421,7 @@
       </div>
     </div>
     <div class="hero4-slider-area"
-      style="background-image: url(assets/img/all-images/bg/banner2.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      style="background-image: url(assets/img/all-images/bg/banner2.webp); background-position: center; background-repeat: no-repeat; background-size: cover;">
       <img src="assets/img/all-images/bg/h-bg1.png"
         alt="reliable solar installation support and after sales service by solar experts" class="h-bg1">
       <img src="assets/img/elements/elements5.png" alt="Afraengineers" class="elements5">
@@ -440,14 +433,14 @@
                   <path
                     d="M2 20H4M4 20H10M4 20V11.452C4 10.918 4 10.651 4.065 10.402C4.12256 10.1819 4.21725 9.97322 4.345 9.78497C4.49 9.57197 4.691 9.39497 5.093 9.04397L9.894 4.84197C10.64 4.18997 11.013 3.86397 11.432 3.73997C11.802 3.62997 12.197 3.62997 12.567 3.73997C12.987 3.86397 13.361 4.18997 14.107 4.84397L18.907 9.04397C19.309 9.39597 19.51 9.57197 19.655 9.78397C19.783 9.9753 19.8763 10.1813 19.935 10.402C20 10.651 20 10.918 20 11.452V20M10 20H14M10 20V16C10 15.4695 10.2107 14.9608 10.5858 14.5858C10.9609 14.2107 11.4696 14 12 14C12.5304 14 13.0391 14.2107 13.4142 14.5858C13.7893 14.9608 14 15.4695 14 16V20M20 20H14M20 20H22"
                     stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                </svg> Your Trusted Local solar Partner</h5>
+                </svg>The Best Solar Company</h5>
               <div class="space28"></div>
               <h1>With Sustainable Solar Solutions</h1>
               <div class="space36"></div>
               <div class="">
                 <form>
                   <!-- <input type="text" placeholder=""> -->
-                  <button type="submit" class="vl-btn1"><a style="color: aliceblue;" href="tel:+91884 867 1403">Contact
+                  <button type="submit" class="vl-btn1"><a style="color: aliceblue;" href="contact.html">Contact
                       Now</a><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i
                         class="fa-solid fa-arrow-right"></i></span></button>
                 </form>
@@ -458,7 +451,7 @@
       </div>
     </div>
     <div class="hero4-slider-area"
-      style="background-image: url(assets/img/all-images/bg/banner3.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      style="background-image: url(assets/img/all-images/bg/banner3.webp); background-position: center; background-repeat: no-repeat; background-size: cover;">
       <img src="assets/img/all-images/bg/h-bg1.png" alt="Afraengineers" class="h-bg1">
       <img src="assets/img/elements/elements5.png" alt="Afraengineers" class="elements5">
       <div class="container">
@@ -469,13 +462,13 @@
                   <path
                     d="M2 20H4M4 20H10M4 20V11.452C4 10.918 4 10.651 4.065 10.402C4.12256 10.1819 4.21725 9.97322 4.345 9.78497C4.49 9.57197 4.691 9.39497 5.093 9.04397L9.894 4.84197C10.64 4.18997 11.013 3.86397 11.432 3.73997C11.802 3.62997 12.197 3.62997 12.567 3.73997C12.987 3.86397 13.361 4.18997 14.107 4.84397L18.907 9.04397C19.309 9.39597 19.51 9.57197 19.655 9.78397C19.783 9.9753 19.8763 10.1813 19.935 10.402C20 10.651 20 10.918 20 11.452V20M10 20H14M10 20V16C10 15.4695 10.2107 14.9608 10.5858 14.5858C10.9609 14.2107 11.4696 14 12 14C12.5304 14 13.0391 14.2107 13.4142 14.5858C13.7893 14.9608 14 15.4695 14 16V20M20 20H14M20 20H22"
                     stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>Your Trusted Local solar Partner</h5>
+                </svg>Residential and Commercial Solar</h5>
               <div class="space28"></div>
               <h1>Advanced Engineering Capabilities</h1>
               <div class="space36"></div>
               <div class="">
                 <form>
-                  <button type="submit" class="vl-btn1"><a style="color: aliceblue;" href="tel:+91884 867 1403">Contact
+                  <button type="submit" class="vl-btn1"><a style="color: aliceblue;" href="con">Contact
                       Now</a><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i
                         class="fa-solid fa-arrow-right"></i></span></button>
                 </form>
@@ -488,19 +481,19 @@
   </div>
   <div class="hero4-small-img">
     <div class="img1">
-      <img src="assets/img/all-images/bg/banner1.png"
+      <img src="assets/img/all-images/bg/banner1.webp"
         alt="solar energy company providing reliable solar power solutions">
     </div>
     <div class="img1">
-      <img src="assets/img/all-images/bg/banner2.png"
+      <img src="assets/img/all-images/bg/banner2.webp"
         alt="trusted solar installation company offering clean energy solutions">
     </div>
     <div class="img1">
-      <img src="assets/img/all-images/bg/banner3.png"
+      <img src="assets/img/all-images/bg/banner3.webp"
         alt="professional solar engineers delivering sustainable energy systems">
     </div>
     <div class="img1">
-      <img src="assets/img/all-images/bg/banner4.png"
+      <img src="assets/img/all-images/bg/banner4.webp"
         alt="solar panel installation for residential and commercial buildings">
     </div>
   </div>
@@ -552,12 +545,6 @@
                     <span style="transform: rotate(289deg);">T</span>
                     <span style="transform: rotate(306deg);">E</span>
                     <span style="transform: rotate(323deg);">D</span>
-                    <!-- <span style="transform: rotate(340deg);">C</span>
-                    <span style="transform: rotate(340deg);">O</span>
-                    <span style="transform: rotate(340deg);">M</span>
-                    <span style="transform: rotate(340deg);">P</span>
-                    <span style="transform: rotate(340deg);">A</span>
-                    <span style="transform: rotate(340deg);">Y</span> -->
                   </h6>
                 </div>
                 <img src="assets/img/icons/arrow1.svg" alt="Afraengineers" class="arrow1">
@@ -574,10 +561,10 @@
               clean and sustainable solar energy with confidence.</p>
             <div class="space32"></div>
             <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200"><button type="submit" class="vl-btn1">
-                <a style="color: aliceblue;" href="https://wa.me/918848671403?text=Hi%20Afra%20Engineers,%20I%20clicked%20the%20'Enquiry%20Now'%20button%20on%20your%20website.%20I%20would%20like%20to%20get%20a%20solar%20quote."
-                  target="_blank" class="your-existing-button-class"  id="enquiryBtn">Enquiry Now<span
-                    class="arrow1">
-                 </button>
+                <a style="color: aliceblue;"
+                  href="https://wa.me/918848671403?text=Hi%20Afra%20Engineers,%20I%20clicked%20the%20'Enquiry%20Now'%20button%20on%20your%20website.%20I%20would%20like%20to%20get%20a%20solar%20quote."
+                  target="_blank" class="your-existing-button-class" id="enquiryBtn">Whatsapp Now<span class="arrow1">
+              </button>
             </div>
           </div>
         </div>
@@ -615,7 +602,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-single-boxarea">
             <div class="img1">
-              <img src="assets/img/all-images/Whywe/Why1.png" alt="afraengineers">
+              <img src="assets/img/all-images/Whywe/Why1.jpg" alt="afraengineers">
             </div>
             <div class="content-area">
               <div class="content">
@@ -630,7 +617,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-single-boxarea">
             <div class="img1">
-              <img src="assets/img/all-images/Whywe/Why2.png" alt="afraengineers">
+              <img src="assets/img/all-images/Whywe/Why2.jpg" alt="afraengineers">
             </div>
             <div class="content-area">
               <div class="content">
@@ -645,7 +632,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-single-boxarea">
             <div class="img1">
-              <img src="assets/img/all-images/Whywe/Why3.png" alt="afraengineers">
+              <img src="assets/img/all-images/Whywe/Why3.jpg" alt="afraengineers">
             </div>
             <div class="content-area">
               <div class="content">
@@ -660,7 +647,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-single-boxarea">
             <div class="img1">
-              <img src="assets/img/all-images/Whywe/Why4.png" alt="afraengineers">
+              <img src="assets/img/all-images/Whywe/Why4.jpg" alt="afraengineers">
             </div>
             <div class="content-area">
               <div class="content">
@@ -675,7 +662,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-single-boxarea">
             <div class="img1">
-              <img src="assets/img/all-images/Whywe/Why5.png" alt="afraengineers">
+              <img src="assets/img/all-images/Whywe/Why5.jpg" alt="afraengineers">
             </div>
             <div class="content-area">
               <div class="content">
@@ -690,7 +677,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-single-boxarea">
             <div class="img1">
-              <img src="assets/img/all-images/Whywe/Why6.png" alt="afraengineers">
+              <img src="assets/img/all-images/Whywe/Why6.jpg" alt="afraengineers">
             </div>
             <div class="content-area">
               <div class="content">
@@ -718,6 +705,7 @@
         </div>
 
         <div id="JFWebsiteWidget-019c0ff8d9b27841a7189e7bf39684469fe9"></div>
+
         <script src='https://www.jotform.com/website-widgets/embed/019c0ff8d9b27841a7189e7bf39684469fe9'>
         </script>
       </div>
@@ -740,8 +728,7 @@
                   <div class="cta-images-area">
                     <img src="assets/img/elements/elements7.png" alt="Afraengineers" class="elements7 aniamtion-key-1">
                     <div class="img1 text-end">
-                      <img src="assets/img/all-images/cta/cta-img1.png" alt="Afraengineers"
-                        style="width: 50%;height: 50%;">
+                      <img src="assets/img/elements/Solarbg.png" alt="Afraengineers" style="width: 50%;height: 50%;">
                     </div>
                     <div class="villa-listing">
                       <div class="list">
@@ -770,10 +757,14 @@
                 sun and create a cleaner.</p>
               <div class="space32"></div>
               <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/share/1EUB5ST9ZU/?mibextid=wwXIfr"><i
+                      class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/afra-engineers/"><i
+                      class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/afra_engineers?igsh=bXU1ZWlwMWoyMHNr"><i
+                      class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/@afraengineers?si=V4Ce45V0qRgirNmI"><i
+                      class="fa-brands fa-youtube"></i></a></li>
               </ul>
             </div>
           </div>
@@ -782,10 +773,11 @@
             <div class="footer-widget-area foot-padding1">
               <h3>Links</h3>
               <ul>
-                <li><a href="index-2.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="our-service.html">Services</a></li>
-                <li><a href="property-halfmap-grid.html">Properties</a></li>
+                <li><a href="blog-detail.html">Blogs</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
             </div>
@@ -795,9 +787,9 @@
             <div class="footer-widget-area foot-padding2">
               <h3>Place</h3>
               <ul>
-                <li><a href="#">KERALA</a></li>
-                <li><a href="#">CHENNAI</a></li>
-                <li><a href="#">BANGALOURE</a></li>
+                <li><a>Kerala</a></li>
+                <li><a>Chennai</a></li>
+                <li><a>Bangaloure</a></li>
               </ul>
             </div>
           </div>
@@ -820,72 +812,16 @@
                       <path
                         d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
                         stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>Kalamassery | Kochi | Kerala</a></li>
+                    </svg> Kalamassery | Kochi | Kerala</a></li>
                 <li><a href="mailto:afraengineers@gmailcom"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                       height="24" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
                         stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>sales@afraengineers.com</a></li>
+                    </svg> sales@afraengineers.com</a></li>
                 <li>
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="space30 d-lg-none d-block"></div>
-            <div class="footer-widget-area">
-              <h3>Instagram Post</h3>
-              <div class="row">
-                <div class="col-lg-4 col-4">
-                  <div class="footer-img">
-                    <img src="assets/img/all-images/footer/footer-img1.png" alt="afraengineers">
-                    <div class="icons">
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-4">
-                  <div class="footer-img">
-                    <img src="assets/img/all-images/footer/footer-img2.png" alt="afraengineers">
-                    <div class="icons">
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-4">
-                  <div class="footer-img">
-                    <img src="assets/img/all-images/footer/footer-img3.png" alt="afraengineers">
-                    <div class="icons">
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-4">
-                  <div class="footer-img">
-                    <img src="assets/img/all-images/footer/footer-img4.png" alt="afraengineers">
-                    <div class="icons">
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-4">
-                  <div class="footer-img">
-                    <img src="assets/img/all-images/footer/footer-img5.png" alt="afraengineers">
-                    <div class="icons">
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-4">
-                  <div class="footer-img">
-                    <img src="assets/img/all-images/footer/footer-img6.png" alt="afraengineers">
-                    <div class="icons">
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -895,7 +831,6 @@
             <p>© 2026 Afraengineers. All Rights Reserved.</p>
             <ul>
               <li><a href="privacy-policy.html">Privacy Policy</a><span></span></li>
-              <li><a href="privacy-policy.html">Terms Of Condition</a></li>
             </ul>
           </div>
         </div>

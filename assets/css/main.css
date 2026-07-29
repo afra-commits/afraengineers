@@ -4270,8 +4270,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .blog-inner-section .blog-siderbar .posts-area .post-auhtor-area .img1 img {
-  height: 120px;
-  width: 120px;
+  width: 130px;
   object-fit: cover;
   border-radius: 4px;
   max-width: 120px;
@@ -14332,26 +14331,86 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .pro-location1 .cs_case_study_thumb {
-  background-image: url(../img/all-images/items/item-img2.png);
+  background-image: url(../img/all-images/projects/pro1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .pro-location1 .cs_case_study_thumb.cs_case_study_thumb2 {
-  background-image: url(../img/all-images/items/item-img3.png);
+  background-image: url(../img/all-images/projects/pro2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .pro-location1 .cs_case_study_thumb.cs_case_study_thumb3 {
-  background-image: url(../img/all-images/items/item-img4.png);
+  background-image: url(../img/all-images/projects/pro3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb4 {
+  background-image: url(../img/all-images/projects/pro4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb5 {
+  background-image: url(../img/all-images/projects/pro5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb6 {
+  background-image: url(../img/all-images/projects/pro6.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb7 {
+  background-image: url(../img/all-images/projects/pro7.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb8 {
+  background-image: url(../img/all-images/projects/pro8.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb9 {
+  background-image: url(../img/all-images/projects/pro9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb10 {
+  background-image: url(../img/all-images/projects/pro10.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb11 {
+  background-image: url(../img/all-images/projects/pro11.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pro-location1 .cs_case_study_thumb.cs_case_study_thumb12 {
+  background-image: url(../img/all-images/projects/pro12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .pro-location1 .cs_case_study.cs_style_1.cs_hover_active {
   margin: 0px 8px;
   border-radius: 30px;
