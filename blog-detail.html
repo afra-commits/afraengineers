@@ -28,326 +28,332 @@
   <link rel="stylesheet" href="assets/css/plugins/swiper-slider.css">
   <link rel="stylesheet" href="assets/css/plugins/odometer.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <style>
+  /* Google Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f9f6;
+  }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f4f9f6;
-}
+  /* SECTION */
 
-/* SECTION */
-
-.faq-section{
-    padding:90px 20px;
+  .faq-section {
+    padding: 90px 20px;
     background:
-        radial-gradient(circle at top left,#d8ffe6 0%,transparent 35%),
-        radial-gradient(circle at bottom right,#dff8ff 0%,transparent 40%),
-        #f5faf8;
-}
+      radial-gradient(circle at top left, #d8ffe6 0%, transparent 35%),
+      radial-gradient(circle at bottom right, #dff8ff 0%, transparent 40%),
+      #f5faf8;
+  }
 
-.faq-container{
-    max-width:1200px;
-    margin:auto;
-}
+  .faq-container {
+    max-width: 1200px;
+    margin: auto;
+  }
 
-/* HEADER */
+  /* HEADER */
 
-.faq-header{
-    text-align:center;
-    margin-bottom:55px;
-}
+  .faq-header {
+    text-align: center;
+    margin-bottom: 55px;
+  }
 
-.faq-tag{
-    display:inline-block;
-    background:#e7fff2;
-    color:#16a34a;
-    padding:8px 20px;
-    border-radius:40px;
-    font-size:.9rem;
-    font-weight:600;
-    margin-bottom:18px;
-}
+  .faq-tag {
+    display: inline-block;
+    background: #e7fff2;
+    color: #16a34a;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
 
-.faq-header h2{
-    font-size:clamp(2rem,5vw,3rem);
-    color:#0f172a;
-    margin-bottom:18px;
-}
+  .faq-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #0f172a;
+    margin-bottom: 18px;
+  }
 
-.faq-header p{
-    max-width:720px;
-    margin:auto;
-    color:#64748b;
-    line-height:1.8;
-}
+  .faq-header p {
+    max-width: 720px;
+    margin: auto;
+    color: #64748b;
+    line-height: 1.8;
+  }
 
-/* GRID */
+  /* GRID */
 
-.faq-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
-    gap:25px;
-}
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 25px;
+  }
 
-/* CARD */
+  /* CARD */
 
-.faq-grid details{
-    background:rgba(255,255,255,.75);
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,255,255,.5);
-    border-radius:18px;
-    padding:20px 24px;
-    transition:.35s;
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
-}
+  .faq-grid details {
+    background: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 18px;
+    padding: 20px 24px;
+    transition: .35s;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+  }
 
-.faq-grid details:hover{
-    transform:translateY(-5px);
-    box-shadow:0 20px 45px rgba(16,185,129,.15);
-}
+  .faq-grid details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(16, 185, 129, .15);
+  }
 
-.faq-grid summary{
-    cursor:pointer;
-    list-style:none;
-    font-size:1.05rem;
-    font-weight:600;
-    color:#0f172a;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+  .faq-grid summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0f172a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.faq-grid summary::-webkit-details-marker{
-    display:none;
-}
+  .faq-grid summary::-webkit-details-marker {
+    display: none;
+  }
 
-/* ICON */
+  /* ICON */
 
-.faq-grid summary::after{
-    content:"+";
-    width:34px;
-    height:34px;
-    border-radius:50%;
-    background:#16a34a;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    transition:.3s;
-    flex-shrink:0;
-}
+  .faq-grid summary::after {
+    content: "+";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #16a34a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: .3s;
+    flex-shrink: 0;
+  }
 
-.faq-grid details[open] summary::after{
-    content:"−";
-    background:#0f766e;
-    transform:rotate(180deg);
-}
+  .faq-grid details[open] summary::after {
+    content: "−";
+    background: #0f766e;
+    transform: rotate(180deg);
+  }
 
-.faq-grid p{
-    margin-top:18px;
-    color:#475569;
-    line-height:1.8;
-    font-size:.96rem;
-}
+  .faq-grid p {
+    margin-top: 18px;
+    color: #475569;
+    line-height: 1.8;
+    font-size: .96rem;
+  }
 
-/* Glow */
+  /* Glow */
 
-.faq-grid details::before{
-    content:"";
-    position:absolute;
-}
+  .faq-grid details::before {
+    content: "";
+    position: absolute;
+  }
 
-.faq-grid details{
-    position:relative;
-    overflow:hidden;
-}
+  .faq-grid details {
+    position: relative;
+    overflow: hidden;
+  }
 
-.faq-grid details::after{
-    content:"";
-    position:absolute;
-    top:-50%;
-    right:-50%;
-    width:140px;
-    height:140px;
-    background:radial-gradient(circle,rgba(34,197,94,.15),transparent 70%);
-    pointer-events:none;
-}
+  .faq-grid details::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, rgba(34, 197, 94, .15), transparent 70%);
+    pointer-events: none;
+  }
 
-/* MOBILE */
+  /* MOBILE */
 
-@media(max-width:768px){
+  @media(max-width:768px) {
 
-.faq-grid{
-    grid-template-columns:1fr;
-}
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
 
-.faq-section{
-    padding:70px 18px;
-}
+    .faq-section {
+      padding: 70px 18px;
+    }
 
-}
-/* Solar FAQ Container Styling */
-:root {
-  --solar-dark: #0f172a;    /* Deep slate/navy */
-  --solar-amber: #f59e0b;   /* Sun gold */
-  --solar-green: #10b981;   /* Eco green */
-  --solar-bg: #ffffff;
-  --text-main: #334155;
-  --text-muted: #64748b;
-  --border-color: #e2e8f0;
-}
+  }
 
-.solar-faq-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 40px 24px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--solar-bg);
-}
+  /* Solar FAQ Container Styling */
+  :root {
+    --solar-dark: #0f172a;
+    /* Deep slate/navy */
+    --solar-amber: #f59e0b;
+    /* Sun gold */
+    --solar-green: #10b981;
+    /* Eco green */
+    --solar-bg: #ffffff;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+  }
 
-.solar-faq-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
+  .solar-faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--solar-bg);
+  }
 
-.faq-badge {
-  background: rgba(245, 158, 11, 0.1);
-  color: #d97706;
-  padding: 6px 16px;
-  border-radius: 100px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: inline-block;
-  margin-bottom: 12px;
-}
+  .solar-faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-.solar-faq-header h2 {
-  color: var(--solar-dark);
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin: 0 0 12px 0;
-  letter-spacing: -0.02em;
-}
+  .faq-badge {
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
 
-.solar-faq-header p {
-  color: var(--text-muted);
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-/* Accordion Styling */
-.faq-accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.faq-item {
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  background: #f8fafc;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-/* Hover effects */
-.faq-item:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
-}
-
-/* Open state styles */
-.faq-item[open] {
-  background: #ffffff;
-  border-color: var(--solar-amber);
-  box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.08);
-}
-
-/* Summary / Question Styling */
-.faq-question {
-  padding: 20px 24px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--solar-dark);
-  cursor: pointer;
-  list-style: none; /* Removes default arrow */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  user-select: none;
-}
-
-/* Custom indicator icon */
-.faq-question::after {
-  content: '+';
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--text-muted);
-  transition: transform 0.3s ease;
-  line-height: 1;
-}
-
-.faq-item[open] .faq-question::after {
-  content: '−';
-  color: var(--solar-amber);
-}
-
-/* Webkit specific arrow removal */
-.faq-question::-webkit-details-marker {
-  display: none;
-}
-
-/* Answer Body Styling */
-.faq-answer {
-  padding: 0 24px 20px 24px;
-  color: var(--text-main);
-  line-height: 1.6;
-  font-size: 1rem;
-  border-top: 1px solid transparent;
-}
-
-.faq-item[open] .faq-answer {
-  border-top-color: #f1f5f9;
-}
-
-.faq-answer p {
-  margin: 0;
-}
-
-.faq-answer strong {
-  color: var(--solar-dark);
-}
-
-/* Responsive Tweaks */
-@media (max-width: 640px) {
   .solar-faq-header h2 {
-    font-size: 1.75rem;
+    color: var(--solar-dark);
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.02em;
   }
+
+  .solar-faq-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  /* Accordion Styling */
+  .faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .faq-item {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: #f8fafc;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover effects */
+  .faq-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+  }
+
+  /* Open state styles */
+  .faq-item[open] {
+    background: #ffffff;
+    border-color: var(--solar-amber);
+    box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.08);
+  }
+
+  /* Summary / Question Styling */
   .faq-question {
-    padding: 16px 20px;
-    font-size: 1rem;
+    padding: 20px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--solar-dark);
+    cursor: pointer;
+    list-style: none;
+    /* Removes default arrow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
   }
+
+  /* Custom indicator icon */
+  .faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    transition: transform 0.3s ease;
+    line-height: 1;
+  }
+
+  .faq-item[open] .faq-question::after {
+    content: '−';
+    color: var(--solar-amber);
+  }
+
+  /* Webkit specific arrow removal */
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Answer Body Styling */
   .faq-answer {
-    padding: 0 20px 16px 20px;
-    font-size: 0.95rem;
+    padding: 0 24px 20px 24px;
+    color: var(--text-main);
+    line-height: 1.6;
+    font-size: 1rem;
+    border-top: 1px solid transparent;
   }
-}
 
+  .faq-item[open] .faq-answer {
+    border-top-color: #f1f5f9;
+  }
 
+  .faq-answer p {
+    margin: 0;
+  }
+
+  .faq-answer strong {
+    color: var(--solar-dark);
+  }
+
+  /* Responsive Tweaks */
+  @media (max-width: 640px) {
+    .solar-faq-header h2 {
+      font-size: 1.75rem;
+    }
+
+    .faq-question {
+      padding: 16px 20px;
+      font-size: 1rem;
+    }
+
+    .faq-answer {
+      padding: 0 20px 16px 20px;
+      font-size: 0.95rem;
+    }
+  }
 </style>
+
 <body class="body1 b-bg1">
   <!--===== PRELOADER STARTS =======-->
   <div class="preloader">
@@ -391,8 +397,7 @@ body{
                   </li>
                   <li><a href="our-service.html">Services<span><i class="fa-solid d-lg-inline d-none"></i></span></a>
                   </li>
-                  <li><a href="projects.html">Projects<span><i
-                          class="fa-solid d-lg-inline d-none"></i></span></a>
+                  <li><a href="projects.html">Projects<span><i class="fa-solid d-lg-inline d-none"></i></span></a>
                   </li>
                   <li><a href="contact.html">Contact<span><i class="fa-solid d-lg-inline d-none"></i></span></a>
                   </li>
@@ -570,7 +575,7 @@ body{
     <!--===== BLOG AREA ENDS =======-->
     <div class="space30"></div>
     <!--===== BLOG AREA STARTS =======-->
-<div class="cat4-section-area ">
+    <div class="cat4-section-area ">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -604,70 +609,78 @@ body{
     <!--===== BLOG AREA ENDS =======-->
 
 
-
-    
-<div class="solar-faq-container">
-  <div class="solar-faq-header">
-    <span class="faq-badge">Got Questions?</span>
-    <h2>Solar Energy Frequently Asked Questions</h2>
-    <p>Everything you need to know about switching to clean, renewable power for your home.</p>
-  </div>
-
-  <div class="faq-accordion">
-    <!-- FAQ Item 1 -->
-    <details class="faq-item" open>
-      <summary class="faq-question">How much can I save with solar panels?</summary>
-      <div class="faq-answer">
-        <P> Most homeowners reduce electricity bills by 50%–90% depending
-                    on energy usage, roof size, location, and the size of the solar
-                    system installed.</P>
+    <div class="solar-faq-container">
+      <div class="solar-faq-header">
+        <span class="faq-badge">Got Questions?</span>
+        <h2>Solar Energy Frequently Asked Questions</h2>
+        <p>Everything you need to know about switching to clean, renewable power for your home.</p>
       </div>
-    </details>
 
-    <!-- FAQ Item 2 -->
-    <details class="faq-item">
-      <summary class="faq-question">Do solar panels work on cloudy days or at night?</summary>
-      <div class="faq-answer">
-        <p>Solar panels work on cloudy days, but their efficiency drops to about <strong>10% to 25%</strong> of their normal output. They do not produce power at night. To power your home at night, you can either draw energy from the traditional grid or install a solar battery storage system (like a Tesla Powerwall) to store excess power generated during the day.</p>
+      <div class="faq-accordion">
+        <!-- FAQ Item 1 -->
+        <details class="faq-item" open>
+          <summary class="faq-question">How much can I save with solar panels?</summary>
+          <div class="faq-answer">
+            <P> Most homeowners reduce electricity bills by 50%–90% depending
+              on energy usage, roof size, location, and the size of the solar
+              system installed.</P>
+          </div>
+        </details>
+
+        <!-- FAQ Item 2 -->
+        <details class="faq-item">
+          <summary class="faq-question">Do solar panels work on cloudy days or at night?</summary>
+          <div class="faq-answer">
+            <p>Solar panels work on cloudy days, but their efficiency drops to about <strong>10% to 25%</strong> of
+              their normal output. They do not produce power at night. To power your home at night, you can either draw
+              energy from the traditional grid or install a solar battery storage system (like a Tesla Powerwall) to
+              store excess power generated during the day.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 3 -->
+        <details class="faq-item">
+          <summary class="faq-question">How long do solar panels last and what is the warranty?</summary>
+          <div class="faq-answer">
+            <p>Industry-standard solar panels last between <strong>25 and 30 years</strong>. After this period, they
+              don't stop working; their energy production efficiency simply drops below 80%. Most tier-1 manufacturers
+              offer a 25-year performance warranty guaranteeing a reliable power output over the system's lifespan.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 4 -->
+        <details class="faq-item">
+          <summary class="faq-question">What is net metering and how does it benefit me?</summary>
+          <div class="faq-answer">
+            <p>Net metering is a billing mechanism that credits you for the excess electricity your solar panels send
+              back to the utility grid. When your panels produce more power than you use, your meter runs backward,
+              earning you credits that offset the electricity you pull from the grid during rainy days or nighttime.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 5 -->
+        <details class="faq-item">
+          <summary class="faq-question">What government incentives or tax credits are available for solar?</summary>
+          <div class="faq-answer">
+            <p>The strongest incentive is the Federal Federal Investment Tax Credit (ITC), which allows you to deduct
+              <strong>30% of your total solar installation cost</strong> from your federal taxes. State-specific
+              rebates, Solar Renewable Energy Certificates (SRECs), and local property tax exemptions can lower the
+              total cost even further.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 6 -->
+        <details class="faq-item">
+          <summary class="faq-question">How much does a home solar system cost?</summary>
+          <div class="faq-answer">
+            <P> Yes. Battery storage allows you to use stored solar energy
+              during the night, power outages, or peak electricity pricing.</P>
+          </div>
+        </details>
       </div>
-    </details>
+    </div>
 
-    <!-- FAQ Item 3 -->
-    <details class="faq-item">
-      <summary class="faq-question">How long do solar panels last and what is the warranty?</summary>
-      <div class="faq-answer">
-        <p>Industry-standard solar panels last between <strong>25 and 30 years</strong>. After this period, they don't stop working; their energy production efficiency simply drops below 80%. Most tier-1 manufacturers offer a 25-year performance warranty guaranteeing a reliable power output over the system's lifespan.</p>
-      </div>
-    </details>
-
-    <!-- FAQ Item 4 -->
-    <details class="faq-item">
-      <summary class="faq-question">What is net metering and how does it benefit me?</summary>
-      <div class="faq-answer">
-        <p>Net metering is a billing mechanism that credits you for the excess electricity your solar panels send back to the utility grid. When your panels produce more power than you use, your meter runs backward, earning you credits that offset the electricity you pull from the grid during rainy days or nighttime.</p>
-      </div>
-    </details>
-
-    <!-- FAQ Item 5 -->
-    <details class="faq-item">
-      <summary class="faq-question">What government incentives or tax credits are available for solar?</summary>
-      <div class="faq-answer">
-        <p>The strongest incentive is the Federal Federal Investment Tax Credit (ITC), which allows you to deduct <strong>30% of your total solar installation cost</strong> from your federal taxes. State-specific rebates, Solar Renewable Energy Certificates (SRECs), and local property tax exemptions can lower the total cost even further.</p>
-      </div>
-    </details>
-
-       <!-- FAQ Item 6 -->
-    <details class="faq-item">
-      <summary class="faq-question">How much does a home solar system cost?</summary>
-      <div class="faq-answer">
-        <P> Yes. Battery storage allows you to use stored solar energy
-                    during the night, power outages, or peak electricity pricing.</P>
-      </div>
-    </details>
-  </div>
-</div>
-
- <div class="vl-footer3-section-area">
+    <div class="vl-footer3-section-area">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -680,13 +693,13 @@ body{
                 sun and create a cleaner.</p>
               <div class="space32"></div>
               <ul>
-                <li><a href="https://www.facebook.com/share/1EUB5ST9ZU/?mibextid=wwXIfr"><i
+                <li><a href="https://www.facebook.com/share/1EUB5ST9ZU/?mibextid=wwXIfr" target="_blank"><i
                       class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/afra-engineers/"><i
+                <li><a href="https://www.linkedin.com/company/afra-engineers/" target="_blank"><i
                       class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.instagram.com/afra_engineers?igsh=bXU1ZWlwMWoyMHNr"><i
+                <li><a href="https://www.instagram.com/afra_engineers?igsh=bXU1ZWlwMWoyMHNr" target="_blank"><i
                       class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://youtube.com/@afraengineers?si=V4Ce45V0qRgirNmI"><i
+                <li><a href="https://youtube.com/@afraengineers?si=V4Ce45V0qRgirNmI" target="_blank"><i
                       class="fa-brands fa-youtube"></i></a></li>
               </ul>
             </div>
@@ -721,7 +734,7 @@ body{
             <div class="footer-widget-area">
               <h3>Contact Us</h3>
               <ul>
-                <li><a href="tel:+11234567890"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <li><a href="tel:+918848671403"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                       viewBox="0 0 24 24" fill="none">
                       <path
                         d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
@@ -758,9 +771,8 @@ body{
           </div>
         </div>
       </div>
+    </div>
 
-
-    
     <!--===== FOOTER AREA ENDS =======-->
     <div class="space32"></div>
     <!--===== JS SCRIPT LINK =======-->
